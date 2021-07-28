@@ -1,0 +1,22 @@
+#grille input {
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  background-color: white;
+  border: 1px black solid;
+  height: 40px;
+  width: 40px;
+}
+
+#grille div input:nth-child(3),
+#grille div input:nth-child(6) {
+  border-right: 3px black solid;
+}
+#grille div:nth-child(3) input,
+#grille div:nth-child(6) input {
+  border-bottom: 3px black solid;
+}
+
+#grille {
+  width: max-content;
+}

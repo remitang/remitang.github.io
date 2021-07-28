@@ -1,0 +1,23 @@
+#grille span {
+  text-align: center;
+  float: left;
+  background-color: #696969;
+  border: 0.5px #5a5e6b solid;
+  height: 22px;
+  width: 22px;
+}
+
+#grille {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-commande {
+  border-radius: 5px;
+  padding: 3px 10px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  background-color: #A9A9A9	;
+  font-size:0.9em;
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Modélisation d'une épidémie</title>
+  <link rel="stylesheet" href="tetris.css" />
+</head>
+
+<!-- Import librairie and fonts-->
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../asset/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+  type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+<!-- CSS -->
+<link href="../../css/index.css" rel="stylesheet">
+
+<body>
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="../../index.html">Remi Tang</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#header">Presentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#analyse">Analyse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="header" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Modélisation d'une épidémie</h2>
+          <h3 class="section-subheading my-2 text-muted">Quels sont les impacts des décisions prises par le
+            gouvernement pour
+            tenter de freiner l'épidémie ?</h3>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h4>Presentation</h4>
+          <p>Dans le cadre du projet de TIPE de 2ème année de classe préparatoire, j'ai choisi de faire une
+            modélisation sur la propagation d'un virus</p>
+          <p>Voici le travail final !</p>
+        </div>
+
+        <video class="col-lg-7 col-md-12 col-sm-12" controls width="500">
+          <source src="demo.mp4" type="video/mp4">
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h4>Modèle de compartiment</h4>
+          <p>Pour effectuer ce projet, je me suis basé sur le modèle de compartiment pour lequel j'étudie la taille de
+            plusieurs populations en fonction du temps</p>
+        </div>
+        <img src="modele.png" class="col-lg-7 col-md-12 col-sm-12" />
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h4>Paramètres</h4>
+          <p>A cela est ajouté plusieurs paramètres dans notre simulation. Le confinement, les cas asymptotiques,
+            saturation des hôpitaux et chances de survies en réanimation sont prises en compte</p>
+        </div>
+        <img src="parametre.png" class="col-lg-7 col-md-12 col-sm-12" />
+      </div>
+    </div>
+  </section>
+
+  <section id="analyse">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Analyse des résultats</h2>
+          <h3 class="section-subheading my-2 text-muted">Impact du port du masque et du confinement</h3>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h4>Le port du masque</h4>
+          <p>J'ai effectué deux simulations, l'une avec un taux de transmission à 40% et un autre à 80% symbolisant le
+            port du masque et respect des gestes barrières</p>
+        </div>
+        <img src="masque.png" class="col-lg-7 col-md-12 col-sm-12" />
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h4>Le confinement</h4>
+          <p>J'ai effectué 10 simulations où j'ai confiné la population de 0% à 90% pour voir comment le nombre de
+            de personnes infectées évoluées au cours du temps</p>
+        </div>
+        <img src="confinement.png" class="col-lg-7 col-md-12 col-sm-12" />
+      </div>
+      <div class="row my-5">
+        <div>
+          <h4>Conclusion</h4>
+          <p>Le port du masque et le confinement ont tous les deux un impact sur la propagation du virus. D'une part le
+            port du masque et des respects des gestes barrières symbolisés par le taux de transmission a un impact mais
+            peu conséquent sur la propagation du virus. D'autre part un confinement de plus de 50% de la population
+            semblent être très efficace</p>
+
+          <p>Ces résultats sont toutefois à prendre avec des pincettes car la modélisation a été faite seulement sur une
+            population de 2000 personnes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">Mon portfolio de projet</h3>
+        </div>
+      </div>
+      <div class="row project">
+        <div class="col-lg-2 col-md-3 col-sm-4">
+          <div class="project-icon d-flex">
+            <img src="../../asset/img/portfolio/virus.png" />
+          </div>
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-8">
+          <div>
+            <span class="project-title">Modélisation de la propagation d'un virus</span>
+            <span>
+              <!--<a href="https://github.com/remitang" class="github-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>-->
+            </span>
+            <span class="project-date">2020 - 2021</span>
+          </div>
+          <div>
+            <span class="project-skill">Python</span>
+            <span class="project-skill">PyGame</span>
+            <span class="project-skill">Matplotlib</span>
+            <span class="project-skill">Programmation objet</span>
+          </div>
+          <div class="project-description">
+            Simulation de la propagation d'une épidémie en Python avec interface graphique PyGame
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8 float-right">
+            <a class="btn btn-info text-uppercase" href="../../Projet/Covid/covid.html" target="_blank">
+              Démo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row project">
+        <div class="col-lg-2 col-md-3 col-sm-4">
+          <div class="project-icon d-flex">
+            <img src="../../asset/img/portfolio/immobilier.png" />
+          </div>
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-8">
+          <div>
+            <span class="project-title">Estimation immobilière de bien en Île-de-france</span>
+            <span>
+              <!--<a href="https://github.com/remitang" class="github-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>-->
+            </span>
+            <span class="project-date">Mai 2019</span>
+          </div>
+          <div>
+            <span class="project-skill">Python</span>
+            <span class="project-skill">Machine Learning</span>
+            <span class="project-skill">Javascript</span>
+            <span class="project-skill">API</span>
+          </div>
+          <div class="project-description">
+            Création d'une interface permettant d'estimer le prix d'un bien en île-de-france utilisant le machine
+            learning
+          </div>
+          <!--<div class="col-lg-4 col-md-6 col-sm-8 float-right">
+            <a class="btn btn-info text-uppercase" href="" target="_blank">
+              Démo
+            </a>
+          </div>-->
+        </div>
+      </div>
+
+      <div class="row project">
+        <div class="col-lg-2 col-md-3 col-sm-4">
+          <div class="project-icon d-flex">
+            <img class="rounded-circle" src="../../asset/img/portfolio/labyrinthe.png" />
+          </div>
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-8">
+          <div>
+            <span class="project-title">Robot-labyrinthe</span>
+            <span>
+              <!--<a href="https://github.com/remitang" class="github-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            -->
+            </span>
+            <span class="project-date">2017 - 2018</span>
+          </div>
+          <div>
+            <span class="project-skill">Arduino</span>
+            <span class="project-skill">C</span>
+            <span class="project-skill">Javascript</span>
+            <span class="project-skill">Jquery</span>
+            <span class="project-skill">Canvas</span>
+          </div>
+          <div class="project-description">
+            Construction d'un robot pouvant sortir de labyrinthe avec une simulation informatique de ses déplacements
+          </div>
+          <!--<div class="col-lg-4 col-md-6 col-sm-8 float-right">
+            <a class="btn btn-info text-uppercase" href="" target="_blank">
+              Démo
+            </a>
+          </div>-->
+        </div>
+      </div>
+      <div class="row project">
+        <div class="col-lg-2 col-md-3 col-sm-4">
+          <div class="project-icon d-flex">
+            <img src="../../asset/img/portfolio/tetris.png" />
+          </div>
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-8">
+          <div>
+            <span class="project-title">Tetris</span>
+            <span>
+              <a href="https://github.com/remitang/tetris" class="github-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </span>
+            <span class="project-date">Juillet 2020</span>
+          </div>
+          <div>
+            <span class="project-skill">Javascript</span>
+            <span class="project-skill">Programmation Objet</span>
+          </div>
+          <div class="project-description">
+            Réalisation du célèbre jeu tetris en programmation objet
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8 float-right">
+            <a class="btn btn-info text-uppercase" href="../../Projet/Tetris/tetris.html" target="_blank">
+              Démo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row project">
+        <div class="col-lg-2 col-md-3 col-sm-4">
+          <div class="project-icon d-flex">
+            <img src="../../asset/img/portfolio/sudoku.png" />
+          </div>
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-8">
+          <div>
+            <span class="project-title">Resolveur de sudoku</span>
+            <span>
+              <a href="https://github.com/remitang/sudoku" class="github-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </span>
+            <span class="project-date">Juillet 2019</span>
+          </div>
+          <div>
+            <span class="project-skill">Backtracking</span>
+            <span class="project-skill">Javascript</span>
+            <span class="project-skill">Programmation Objet</span>
+          </div>
+          <div class="project-description">
+            Résolveur de sudoku utilisant le backtracking
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-8 float-right">
+            <a class="btn btn-info text-uppercase" href="../../Projet/Sudoku/sudoku.html" target="_blank">
+              Démo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row project">
+        <div class="col-lg-2 col-md-3 col-sm-4">
+          <div class="project-icon d-flex">
+            <img src="../../asset/img/portfolio/mastercolor.png" />
+          </div>
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-8">
+          <div>
+            <span class="project-title">Mastercolor</span>
+            <span>
+              <!--
+              <a href="https://github.com/remitang" class="github-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              -->
+            </span>
+            <span class="project-date">2016 - 2017</span>
+          </div>
+          <div>
+            <span class="project-skill">Arduino</span>
+            <span class="project-skill">C</span>
+            <span class="project-skill">Javascript</span>
+            <span class="project-skill">Drag And Drop</span>
+          </div>
+          <div class="project-description">
+            Creation de machine qui permet de détecter une couleur avec simulation informatique utilisant le drag and
+            drop
+          </div>
+          <!--
+          <div class="col-lg-4 col-md-6 col-sm-8 float-right">
+            <a class="btn btn-info text-uppercase" href="" target="_blank">
+              Démo
+            </a>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Remi Tang 2021</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="mailto:remi.tang@protonmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/remitang" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/rémi-tang-1228b416b" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <a class="btn btn-primary text-uppercase" href="../../asset/CV_RemiTang.pdf" target="_blank">
+            Mon CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+<!-- Import Bootstrap JavaScript -->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.bundle.min.js"></script>
+<script src="../../js/jquery.easing.js"></script>
+
+<!-- Javascript -->
+<script src="../../js/index.js"></script>
+
+</html>
