@@ -93,6 +93,21 @@ img::-moz-selection {
   background-color: #212529;
 }
 
+#mainNav.navbar .dropdown-menu, #mainNav.navbar .dropdown.show a {
+  background-color: #212529;
+  color: white;
+  top: 40px;
+  padding: 7px;
+  border: 0;
+}
+
+
+/*
+#mainNav.navbar.dropdown.show a {
+  right: 0;
+  padding: 13px;
+}
+*/
 #mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;

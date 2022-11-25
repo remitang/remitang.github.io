@@ -4,28 +4,29 @@
 <head>
   <meta charset="utf-8" />
   <title>Sudoku</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="stylesheet" href="sudoku.css" />
 </head>
 
 <!-- Import librairie and fonts-->
-<link href="../../css/bootstrap.min.css" rel="stylesheet">
-<link href="../../asset/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="../../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../../asset/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
   type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
 
 <!-- CSS -->
-<link href="../../css/index.css" rel="stylesheet">
+<link href="../../../css/index.css" rel="stylesheet">
 
 <body>
-
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="../../index.html">Remi Tang</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Remi Tang</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -42,8 +43,23 @@
           </li>
         </ul>
       </div>
+      <div>
+        <ul class="navbar-nav text-uppercase">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropwdownLanguage" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="fi fi-fr"></span> FR
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropwdownLanguage">
+              <a class="dropdown-item" href="../../../en/index.html">
+                <span class="fi fi-gb"></span> EN
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
+
 
   <section id="demo" class="container">
     <h2 class="text-center">Demo Sudoku</h2>
@@ -71,14 +87,15 @@
       <div class="row project">
         <div class="col-lg-2 col-md-3 col-sm-4">
           <div class="project-icon d-flex">
-            <img src="../../asset/img/portfolio/virus.png" />
+            <img src="../../../asset/img/portfolio/virus.png" />
           </div>
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
           <div>
-            <span class="project-title">Modélisation de la propagation d'un virus</span>
+            <span class="project-title">Modélisation de la propagation d'une épidémie</span>
             <span>
-              <!--<a href="https://github.com/remitang" class="github-link" target="_blank">
+              <!--
+              <a href="https://github.com/remitang" class="github-link" target="_blank">
                 <i class="fab fa-github"></i>
               </a>-->
             </span>
@@ -91,11 +108,11 @@
             <span class="project-skill">Programmation objet</span>
           </div>
           <div class="project-description">
-            Simulation de la propagation d'une épidémie en Python avec interface graphique PyGame
+            Simulation de la propagation d'une épidémie avec interface graphique PyGame en Python
           </div>
           <div class="col-lg-4 col-md-6 col-sm-8 float-right">
-            <a class="btn btn-info text-uppercase" href="../../Projet/Covid/covid.html" target="_blank">
-              Démo
+            <a class="btn btn-info text-uppercase" href="../Covid/covid.html" target="_blank">
+              Demo
             </a>
           </div>
         </div>
@@ -104,16 +121,16 @@
       <div class="row project">
         <div class="col-lg-2 col-md-3 col-sm-4">
           <div class="project-icon d-flex">
-            <img src="../../asset/img/portfolio/immobilier.png" />
+            <img src="../../../asset/img/portfolio/immobilier.png" />
           </div>
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
           <div>
             <span class="project-title">Estimation immobilière de bien en Île-de-france</span>
             <span>
-              <!--<a href="https://github.com/remitang" class="github-link" target="_blank">
+              <a href="https://github.com/remitang/remitang.github.io/tree/main/Project/Housing" class="github-link" target="_blank">
                 <i class="fab fa-github"></i>
-              </a>-->
+              </a>
             </span>
             <span class="project-date">Mai 2019</span>
           </div>
@@ -124,28 +141,29 @@
             <span class="project-skill">API</span>
           </div>
           <div class="project-description">
-            Création d'une interface permettant d'estimer le prix d'un bien en île-de-france utilisant le machine
+            Réalisation d'une interface permettant d'estimer le prix d'un bien en île-de-france utilisant le machine
             learning
           </div>
-          <!--<div class="col-lg-4 col-md-6 col-sm-8 float-right">
-            <a class="btn btn-info text-uppercase" href="" target="_blank">
-              Démo
+          <div class="col-lg-4 col-md-6 col-sm-8 float-right">
+            <a class="btn btn-info text-uppercase" href="../../../Project/Housing/index.html" target="_blank">
+              Demo
             </a>
-          </div>-->
+          </div>
         </div>
       </div>
 
       <div class="row project">
         <div class="col-lg-2 col-md-3 col-sm-4">
           <div class="project-icon d-flex">
-            <img class="rounded-circle" src="../../asset/img/portfolio/labyrinthe.png" />
+            <img class="rounded-circle" src="../../../asset/img/portfolio/labyrinthe.png" />
           </div>
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
           <div>
             <span class="project-title">Robot-labyrinthe</span>
             <span>
-              <!--<a href="https://github.com/remitang" class="github-link" target="_blank">
+              <!--
+              <a href="https://github.com/remitang" class="github-link" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             -->
@@ -164,7 +182,7 @@
           </div>
           <!--<div class="col-lg-4 col-md-6 col-sm-8 float-right">
             <a class="btn btn-info text-uppercase" href="" target="_blank">
-              Démo
+              Demo
             </a>
           </div>-->
         </div>
@@ -172,7 +190,7 @@
       <div class="row project">
         <div class="col-lg-2 col-md-3 col-sm-4">
           <div class="project-icon d-flex">
-            <img src="../../asset/img/portfolio/tetris.png" />
+            <img src="../../../asset/img/portfolio/tetris.png" />
           </div>
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
@@ -193,8 +211,8 @@
             Réalisation du célèbre jeu tetris en programmation objet
           </div>
           <div class="col-lg-4 col-md-6 col-sm-8 float-right">
-            <a class="btn btn-info text-uppercase" href="../../Projet/Tetris/tetris.html" target="_blank">
-              Démo
+            <a class="btn btn-info text-uppercase" href="../Tetris/tetris.html" target="_blank">
+              Demo
             </a>
           </div>
         </div>
@@ -203,7 +221,7 @@
       <div class="row project">
         <div class="col-lg-2 col-md-3 col-sm-4">
           <div class="project-icon d-flex">
-            <img src="../../asset/img/portfolio/sudoku.png" />
+            <img src="../../../asset/img/portfolio/sudoku.png" />
           </div>
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
@@ -225,8 +243,8 @@
             Résolveur de sudoku utilisant le backtracking
           </div>
           <div class="col-lg-4 col-md-6 col-sm-8 float-right">
-            <a class="btn btn-info text-uppercase" href="../../Projet/Sudoku/sudoku.html" target="_blank">
-              Démo
+            <a class="btn btn-info text-uppercase" href="../Sudoku/sudoku.html" target="_blank">
+              Demo
             </a>
           </div>
         </div>
@@ -235,7 +253,7 @@
       <div class="row project">
         <div class="col-lg-2 col-md-3 col-sm-4">
           <div class="project-icon d-flex">
-            <img src="../../asset/img/portfolio/mastercolor.png" />
+            <img src="../../../asset/img/portfolio/mastercolor.png" />
           </div>
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
@@ -276,12 +294,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Remi Tang 2021</span>
+          <span class="copyright">Copyright &copy; Remi Tang 2022</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="mailto:remi.tang@protonmail.com">
+              <a href="mailto:remi.tang.pro@gmail.com">
                 <i class="fa fa-envelope"></i>
               </a>
             </li>
@@ -298,7 +316,7 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-primary text-uppercase" href="../../asset/CV_RemiTang.pdf" target="_blank">
+          <a class="btn btn-primary text-uppercase" href="../../../asset/CV_RemiTang.pdf" target="_blank">
             Mon CV
           </a>
         </div>
@@ -309,12 +327,12 @@
 
 
 <!-- Import Bootstrap JavaScript -->
-<script src="../../js/jquery.min.js"></script>
-<script src="../../js/bootstrap.bundle.min.js"></script>
-<script src="../../js/jquery.easing.js"></script>
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/bootstrap.bundle.min.js"></script>
+<script src="../../../js/jquery.easing.js"></script>
 
 <!-- Javascript -->
-<script src="../../js/index.js"></script>
+<script src="../../../js/index.js"></script>
 <script src="sudoku.js"></script>
 
 </html>

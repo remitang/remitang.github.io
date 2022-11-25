@@ -1,0 +1,181 @@
+html, body {
+	color: #fff;
+	font-weight: bold !important;
+	font-size: 14px !important;
+	height: 100%;
+}
+
+th {
+	color: black;
+}
+
+@media (max-width: 768px) {
+    .long-text { display: none; }
+}
+
+.wrapper {
+    width: 100%;
+    min-height: calc(100vh - 49px);
+	display: flex;
+}
+
+#content {
+	min-height: 100%;
+	width: 100%;
+}
+
+#sidebar_left {
+    min-width: 250px;
+    max-width: 250px;
+	background-color: #212D32;
+	min-height: 100%;
+}
+
+#sidebar_right {
+    min-width: 250px;
+    max-width: 250px;
+	background-color: #212D32;
+	min-height: 100%;
+}
+
+#mapid { 
+	height: 100%; 
+}
+
+.labelFeuille {
+	font-weight: bold;
+	color: #fff;
+}
+
+.card-body {
+	color: black;
+	padding: 0.5rem;
+}
+
+.btn-primary {
+	background-color: #002C81;
+	border-color: #002C81;
+}
+
+.btn-primary:hover {
+	background-color: #005DA3;
+	border-color: #005DA3;
+	cursor: pointer;
+}
+
+.close-link {
+	float: right;
+	cursor: pointer;
+}
+.close-link:hover {
+	text-decoration: underline;
+}
+
+/* Barre de menu en haut */
+
+.topnav {
+  overflow: hidden;
+  background-color: #005DA3;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  font-weight: bold;
+}
+
+.topnav a.active {
+  text-align: left;
+  background-color: #002C81;
+  color: white;
+  min-width: 250px;
+  max-width: 250px;
+  font-weight: bold;
+}
+
+.topnav-right {
+  float: right;
+}
+
+#legend
+{
+    background-image: linear-gradient(to right, hsl(0,100%,50%), hsl(60,100%,50%),  hsl(120,100%,50%));
+
+    width: 220px;
+    height: 20px;
+}
+
+#titre_legend
+{
+	font-weight: bold;
+  	font-size: 15px;
+	text-align: center;
+	color:black;
+}
+#text_legend
+{
+	display: flex;
+	justify-content: space-between;
+	color:black;
+  	font-size: 12px;
+  	font-weight: bold;
+}
+
+#container {
+	width: 220px;
+	height: 36px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+	user-select: none;
+	cursor: pointer;
+}
+
+.inner-container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: inherit;
+	height: inherit;
+	text-transform: uppercase;
+  	font-weight: bold;
+	font-size: .6em;
+	letter-spacing: .2em;
+}
+
+.inner-container:first-child {
+	background: #e9e9e9;
+	color: #a9a9a9;
+  	font-weight: bold;
+}
+
+.inner-container:nth-child(2) {
+	background: dodgerblue;
+	color: white;
+  	font-weight: bold;
+	clip-path: inset(0 50% 0 0);
+}
+
+.toggle {
+	width: 50%;
+	position: absolute;
+	height: inherit;
+	display: flex;
+}
+
+.toggle p {
+	margin: auto;
+}
+
+.toggle:nth-child(1) {
+	right: 0;
+}
