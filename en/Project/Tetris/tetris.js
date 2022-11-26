@@ -273,7 +273,7 @@ const clearLine = () => {
       grille.splice(i, 1);
       grille.unshift([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
       score = score + 100;
-      document.getElementById("ligne").innerText = "Lignes : " + ligne;
+      document.getElementById("ligne").innerText = "Lines : " + ligne;
       document.getElementById("score").innerText = "Score : " + score;
     }
   }
@@ -296,7 +296,7 @@ const start = () => {
   if (score > niveau * 1000) {
     niveau += 1;
     timer = timer * 0.75;
-    document.getElementById("niveau").innerText = "Niveau : " + niveau;
+    document.getElementById("niveau").innerText = "Level : " + niveau;
   }
   clearLine();
   pieceFantome.reset();
@@ -345,7 +345,7 @@ document.getElementById("restart").addEventListener("click", function () {
 const chrono = () => {
   let s = Math.floor((Date.now() - timeStart) / 1000);
   let sec = Math.floor(s % 60) < 10 ? String("0" + Math.floor(s % 60)) : Math.floor(s % 60);
-  document.getElementById("time").innerText = "Temps écoulé : " + Math.floor(s / 60) + ":" + sec;
+  document.getElementById("time").innerText = "Elapsed time : " + Math.floor(s / 60) + ":" + sec;
   timeChrono = setTimeout(function () {
     chrono();
   }, 999);

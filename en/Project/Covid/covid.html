@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Tetris</title>
+  <title>Modélisation d'une épidémie</title>
   <link rel="icon" type="image/x-icon" href="../../../favicon.ico">
   <link rel="stylesheet" href="tetris.css" />
 </head>
@@ -24,7 +24,6 @@
 <body>
 
 
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
@@ -38,7 +37,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#demo">Demo</a>
+            <a class="nav-link js-scroll-trigger" href="#header">Presentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#analyse">Analysis</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -49,11 +51,11 @@
         <ul class="navbar-nav text-uppercase">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropwdownLanguage" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="fi fi-fr"></span> FR
+              <span class="fi fi-gb"></span> EN
             </a>
             <div class="dropdown-menu" aria-labelledby="dropwdownLanguage">
-              <a class="dropdown-item" href="../../../en/Project/Tetris/tetris.html">
-                <span class="fi fi-gb"></span> EN
+              <a class="dropdown-item" href="../../../fr/Projet/Covid/covid.html">
+                <span class="fi fi-fr"></span> FR
               </a>
             </div>
           </li>
@@ -62,58 +64,77 @@
     </div>
   </nav>
 
-  <section id="demo">
-    <h2 class="text-center section-heading text-uppercase">Demo Tetris</h2>
-
+  <section id="header" class="bg-light">
     <div class="container">
       <div class="row">
-        <div id="grille" class="col-lg-6 col-md-6 col-sm-6"></div>
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Modeling an epidemic spreading</h2>
+          <h3 class="section-subheading my-2 text-muted">What are the impacts of the decisions made by the government to stop the epidemic?</h3>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h4>Presentation</h4>
+          <p>In my TIPE project of my 2nd year of preparatory class, I chose to modele an epidemic spreading.</p>
+          <p>Here is the final work !</p>
+        </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <div class="col-lg-12 bg-commande">
-            <h5 class="section-heading text-uppercase">Commandes</h5>
-            <div class="d-flex justify-content-around">
-              <span><i class="fa fa-arrow-left" aria-hidden="true"></i>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-              <span>Gauche ou Droite</span>
+        <video class="col-lg-7 col-md-12 col-sm-12" controls width="500">
+          <source src="../../../asset/img/projet/Covid/demo.mp4" type="video/mp4">
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h4>Compartment model</h4>
+          <p>To carry out this project, the project was based on the compartment model in which I study the size of several populations according to time.</p>
+        </div>
+        <img src="../../../asset/img/projet/Covid/modele.png" class="col-lg-7 col-md-12 col-sm-12" />
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h4>Parameters</h4>
+          <p>I added many parameters in this simulation. The lockdown, the asymptotic cases, hospital saturation and survival chance in intensive care unit are all taken into account.</p>
+        </div>
+        <img src="../../../asset/img/projet/Covid/parametre.png" class="col-lg-7 col-md-12 col-sm-12" />
+      </div>
+    </div>
+  </section>
 
-            </div>
-            <div class="d-flex justify-content-around">
-              <i class="fa fa-arrow-down" aria-hidden="true"></i>
-              Descente rapide
-            </div>
-            <div class="d-flex justify-content-around">
-              <i class="fa fa-arrow-up" aria-hidden="true"></i>
-              Pivoter la pièce
-            </div>
-            <div class="d-flex justify-content-around">
-              <span class="font-weight-bold">SPACE</span><span>Descente maximal</span>
-            </div>
+  <section id="analyse">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Results analysis</h2>
+          <h3 class="section-subheading my-2 text-muted">Mask wearing and lockdown impact</h3>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h4>Mask wearing</h4>
+          <p>J'ai effectué deux simulations, l'une avec un taux de transmission à 40% et un autre à 80% symbolisant le
+            port du masque et respect des gestes barrières</p>
+        </div>
+        <img src="../../../asset/img/projet/Covid/masque.png" class="col-lg-7 col-md-12 col-sm-12" />
+      </div>
+      <div class="row my-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h4>Lockdown</h4>
+          <p>I ran 10 simulations where I confined the population from 0% to 90% to see how the number of infected people evolve over time</p>
+        </div>
+        <img src="../../../asset/img/projet/Covid/confinement.png" class="col-lg-7 col-md-12 col-sm-12" />
+      </div>
+      <div class="row my-5">
+        <div>
+          <h4>Conclusion</h4>
+          <p>Mask wearing and lockdown have both an impact on the epidemic spreading. On the one hand, wearing a mask and respecting the barrier measures symbolized by the transmission rate has a reducing impact on the epidemic spreading, but not a significant one. On the other hand, a lockdown of more than 50% of the population seems to be very effective.</p>
 
-          </div>
-          <div class="col-lg-12">
-            <div class="d-flex justify-content-between">
-              <span id="time">Temps écoulé : 0:00</span>
-              <span id="niveau">Niveau : 1</span>
-            </div>
-            <div class="d-flex justify-content-between">
-              <span id="score">Score : 0</span>
-              <span id="ligne">Lignes : 0</span>
-            </div>
-            <div class="text-center">
-              <button id="start" class="btn btn-primary">
-                START
-              </button>
-              <button id="restart" class="btn btn-info">
-                RESTART
-              </button>
-            </div>
-          </div>
+          <p>However, these results should be taken with caution because the modeling was done only on a population of 2000 people.</p>
         </div>
       </div>
     </div>
-    <div>
   </section>
+
 
 
   <!-- Portfolio Grid -->
@@ -122,7 +143,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Mon portfolio de projet</h3>
+          <h3 class="section-subheading text-muted">My project portfolio</h3>
         </div>
       </div>
       <div class="row project">
@@ -133,10 +154,9 @@
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
           <div>
-            <span class="project-title">Modélisation de la propagation d'une épidémie</span>
+            <span class="project-title">Modeling epidemic spreading</span>
             <span>
-              <!--
-              <a href="https://github.com/remitang" class="github-link" target="_blank">
+              <!--<a href="https://github.com/remitang" class="github-link" target="_blank">
                 <i class="fab fa-github"></i>
               </a>-->
             </span>
@@ -146,10 +166,10 @@
             <span class="project-skill">Python</span>
             <span class="project-skill">PyGame</span>
             <span class="project-skill">Matplotlib</span>
-            <span class="project-skill">Programmation objet</span>
+            <span class="project-skill">Object-oriented programming</span>
           </div>
           <div class="project-description">
-            Simulation de la propagation d'une épidémie avec interface graphique PyGame en Python
+            Simulation of an epidemic spreading using PyGame graphical interface in Python
           </div>
           <div class="col-lg-4 col-md-6 col-sm-8 float-right">
             <a class="btn btn-info text-uppercase" href="../Covid/covid.html" target="_blank">
@@ -167,13 +187,13 @@
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
           <div>
-            <span class="project-title">Estimation immobilière de bien en Île-de-france</span>
+            <span class="project-title">Property valuation in Ile-de-France</span>
             <span>
               <a href="https://github.com/remitang/remitang.github.io/tree/main/Project/Housing" class="github-link" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </span>
-            <span class="project-date">Mai 2019</span>
+            <span class="project-date">May 2019</span>
           </div>
           <div>
             <span class="project-skill">Python</span>
@@ -182,8 +202,7 @@
             <span class="project-skill">API</span>
           </div>
           <div class="project-description">
-            Réalisation d'une interface permettant d'estimer le prix d'un bien en île-de-france utilisant le machine
-            learning
+            Implementation of an interface to estimate the price of a property in the Ile-de-France region using machine learning
           </div>
           <div class="col-lg-4 col-md-6 col-sm-8 float-right">
             <a class="btn btn-info text-uppercase" href="../../../Project/Housing/index.html" target="_blank">
@@ -201,7 +220,7 @@
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
           <div>
-            <span class="project-title">Robot-labyrinthe</span>
+            <span class="project-title">Maze robot</span>
             <span>
               <!--
               <a href="https://github.com/remitang" class="github-link" target="_blank">
@@ -219,7 +238,7 @@
             <span class="project-skill">Canvas</span>
           </div>
           <div class="project-description">
-            Construction d'un robot pouvant sortir de labyrinthe avec une simulation informatique de ses déplacements
+            Construction of a robot that can leave a maze paired with a computer simulation of its movements
           </div>
           <!--<div class="col-lg-4 col-md-6 col-sm-8 float-right">
             <a class="btn btn-info text-uppercase" href="" target="_blank">
@@ -242,14 +261,14 @@
                 <i class="fab fa-github"></i>
               </a>
             </span>
-            <span class="project-date">Juillet 2020</span>
+            <span class="project-date">July 2020</span>
           </div>
           <div>
             <span class="project-skill">Javascript</span>
-            <span class="project-skill">Programmation Objet</span>
+            <span class="project-skill">Object-oriented programming</span>
           </div>
           <div class="project-description">
-            Réalisation du célèbre jeu tetris en programmation objet
+            Realization of the famous tetris game in object-oriented programming
           </div>
           <div class="col-lg-4 col-md-6 col-sm-8 float-right">
             <a class="btn btn-info text-uppercase" href="../Tetris/tetris.html" target="_blank">
@@ -267,21 +286,21 @@
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8">
           <div>
-            <span class="project-title">Resolveur de sudoku</span>
+            <span class="project-title">Sudoku solver</span>
             <span>
               <a href="https://github.com/remitang/sudoku" class="github-link" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </span>
-            <span class="project-date">Juillet 2019</span>
+            <span class="project-date">July 2019</span>
           </div>
           <div>
             <span class="project-skill">Backtracking</span>
             <span class="project-skill">Javascript</span>
-            <span class="project-skill">Programmation Objet</span>
+            <span class="project-skill">Object-oriented programming</span>
           </div>
           <div class="project-description">
-            Résolveur de sudoku utilisant le backtracking
+            Sudoku solver using backtracking algorithm
           </div>
           <div class="col-lg-4 col-md-6 col-sm-8 float-right">
             <a class="btn btn-info text-uppercase" href="../Sudoku/sudoku.html" target="_blank">
@@ -316,8 +335,7 @@
             <span class="project-skill">Drag And Drop</span>
           </div>
           <div class="project-description">
-            Creation de machine qui permet de détecter une couleur avec simulation informatique utilisant le drag and
-            drop
+            Creation of a machine that detect a color paired with a computer simulation using drag and drop
           </div>
           <!--
           <div class="col-lg-4 col-md-6 col-sm-8 float-right">
@@ -358,7 +376,7 @@
         </div>
         <div class="col-md-4">
           <a class="btn btn-primary text-uppercase" href="../../../asset/CV_RemiTang.pdf" target="_blank">
-            Mon CV
+            My CV
           </a>
         </div>
       </div>
@@ -374,6 +392,5 @@
 
 <!-- Javascript -->
 <script src="../../../js/index.js"></script>
-<script src="tetris.js"></script>
 
 </html>
