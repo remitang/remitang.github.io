@@ -2,7 +2,6 @@
 
 This repository contains the code and resources for predicting real estate prices in the Ile-de-France region using historical property transaction data. The project involves data collection, preprocessing, machine learning model implementation, and visualization on a website.
 
-![Tutoriel](Tutoriel.mp4)
 
 ## Project Overview  
 
@@ -29,7 +28,7 @@ In this project, we aim to:
 
 ## Medium Article and Website
 
-For a detailed explanation of the project, please visit my [Medium article](LINK).
+For a detailed explanation of the project, please visit my [Medium article](https://remitang.medium.com/predicting-real-estate-prices-a-journey-into-data-science-and-market-trends-0cb87fed5e55).
 
 You can explore the website showcasing the predictions and visualizations [here](https://remitang.github.io/Project/Housing/index.html).
 
